@@ -23,11 +23,15 @@ Poetry is used for dependency management and packaging. [Poetry Docs](https://py
 
 **Dev**
 
-Unitesting and developer dependencies that are not required for the code to run in production.
+Developer dependencies that are not required for the code to run in production.
 
 **Docs**
 
 Dependencies for building documentation with mkdocs.
+
+**Test**
+
+Unitesting dependencies.
 
 ### :arrow_up: Renovate
 
