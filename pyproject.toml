@@ -18,6 +18,7 @@ pylint = "^3.0.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.2"
+pytest-cov = "^4.1.0"
 
 
 [tool.poetry.group.docs.dependencies]

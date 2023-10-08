@@ -46,11 +46,13 @@ jobs:
       - name: Install pycli
         run: poetry install --no-interaction --no-ansi
 
-      - name: Run Tests
-        run: poetry run pytest --cov mpp
+      # Commented out for template
+      #
+      # - name: Run Tests
+      #   run: poetry run pytest --cov pycli
 
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
-        env: 
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        if: ${{ matrix.os == 'ubuntu-latest' && matrix.python == 3.9 }}
+      # - name: Upload coverage reports to Codecov
+      #   uses: codecov/codecov-action@v3
+      #   env: 
+      #     CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      #   if: ${{ matrix.os == 'ubuntu-latest' && matrix.python == 3.9 }}
