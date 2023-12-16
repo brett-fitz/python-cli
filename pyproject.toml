@@ -13,7 +13,7 @@ coloredlogs = "^15.0.1"
 
 
 [tool.poetry.group.dev.dependencies]
-pylint = "^3.0.2"
+pylint = "^3.0.3"
 
 
 [tool.poetry.group.test.dependencies]
@@ -24,8 +24,8 @@ pytest-cov = "^4.1.0"
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.5.3"
 mkdocstrings = "^0.24.0"
-mkdocs-material = "^9.5.1"
-mkdocs-minify-plugin = "^0.7.1"
+mkdocs-material = "^9.5.2"
+mkdocs-minify-plugin = "^0.7.2"
 mkdocs-table-reader-plugin = "^2.0.3"
 
 [tool.poetry.scripts]
