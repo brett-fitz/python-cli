@@ -21,9 +21,20 @@ theme:
 
 # plugins
 plugins:
+  # Features and functionality
   - search
-  - mkdocstrings
   - table-reader
+
+  # Auto-generate reference pages
+  - mkdocstrings
+  - section-index
+  - gen-files:
+      scripts:
+        - scripts/gen_ref_pages.py
+  - literate-nav:
+      nav_file: SUMMARY.md
+
+  # Styling
   - minify:
       minify_html: true
 
@@ -44,3 +55,4 @@ nav:
   - Home: index.md
   - Setup: setup.md
   - Overview: overview.md
+  - Code Reference: reference/
